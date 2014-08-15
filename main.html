@@ -10,6 +10,7 @@
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/twbs-bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -24,9 +25,26 @@
                     <small class="logo__slogan">В масштабах страны, в интересах каждого!</small>
                 </span>
                 </div>
-                <div class="ent-reg col-lg-4">
-                    <span class="ent-reg__entrance">вход</span> /
-                    <a class="ent-reg_registration" href="#">регистрация</a>
+                <div class="reg-ent col-lg-4">
+                    <span class="reg-ent__item">вход
+
+                    </span>  /
+                    <span class="reg-ent__item" href="#">регистрация
+                     <div class="reg-ent__form">
+                         <form role="form">
+                             <div class="form-group">
+
+                                 <input type="login" class="reg-ent__form-inp form-control" id="exampleInputEmail1" placeholder="Логин">
+                             </div>
+                             <div class="form-group">
+                                 <input type="password" class="reg-ent__form-inp form-control" id="exampleInputPassword1" placeholder="Пароль">
+
+                             </div>
+                             <button type="submit" class="btn btn-default">Submit</button>
+                         </form>
+                     </div>
+                    </span>
+
                 </div>
 
             </div>

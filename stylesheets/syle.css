@@ -8202,9 +8202,10 @@ body {
 .header {
   background: white;
   border-bottom: 1px solid #dedede;
+  padding: 15px 0 10px;
 }
 
-/* line 34, ../sass/syle.scss */
+/* line 35, ../sass/syle.scss */
 .header__inner {
   height: 90px;
   border-bottom: none;
@@ -8350,7 +8351,7 @@ body {
 
 /* line 8, ../sass/elements/logo.scss */
 .logo__img {
-  font: 48px/100px "PFAgoraSansPro-Light";
+  font: 48px/57px "PFAgoraSansPro-Light";
   color: #7a962d;
   text-transform: uppercase;
   vertical-align: middle;
@@ -8379,7 +8380,7 @@ body {
 
 /* line 37, ../sass/elements/logo.scss */
 .logo__separator {
-  font-size: 42px;
+  font-size: 40px;
   padding: 0 27px;
 }
 
@@ -8516,27 +8517,72 @@ body {
 }
 
 /* line 3, ../sass/elements/reg-ent.scss */
-.ent-reg {
-  font: 14px/33px "PFAgoraSansPro-Reg_0";
+.reg-ent {
+  font: 14px/70px "PFAgoraSansPro-Bold_0";
   text-transform: uppercase;
   color: #444444;
+  text-align: right;
+  word-spacing: 10px;
 }
 
-/* line 9, ../sass/elements/reg-ent.scss */
-.ent-reg__entrance {
-  font-family: "Conv_PFAgoraSansPro-Bold_0";
+/* line 11, ../sass/elements/reg-ent.scss */
+.reg-ent__item {
+  cursor: pointer;
+  position: relative;
+}
+/* line 15, ../sass/elements/reg-ent.scss */
+.reg-ent__item:before {
+  position: absolute;
+  display: block;
+  content: " ";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #7a962d;
+  top: 0px;
+  right: 50%;
+  margin-right: -20px;
+  display: none;
+}
+
+/* line 28, ../sass/elements/reg-ent.scss */
+.reg-ent__item_type_active {
+  font-family: "PFAgoraSansPro-Reg_0";
+  color: #7a962d;
+}
+
+/* line 35, ../sass/elements/reg-ent.scss */
+.reg-ent__form {
+  background: #7a962d;
+  text-align: left;
+  padding: 22px;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  cursor: default;
+  display: none;
+}
+
+/* line 46, ../sass/elements/reg-ent.scss */
+.reg-ent__form-inp {
+  width: 285px;
+  font: 16px "PFAgoraSansPro-Reg_0";
+  height: 40px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
 }
 
 /* Middle
 -----------------------------------------------------------------------------*/
-/* line 45, ../sass/syle.scss */
+/* line 47, ../sass/syle.scss */
 .content {
   padding: 0 0 144px;
 }
 
 /* Footer
 -----------------------------------------------------------------------------*/
-/* line 52, ../sass/syle.scss */
+/* line 54, ../sass/syle.scss */
 .footer {
   margin: -144px auto 0;
   min-width: 640px;

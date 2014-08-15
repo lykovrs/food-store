@@ -1,11 +1,52 @@
 @import "../base";
 
-.ent-reg {
-	font: 14px/33px "PFAgoraSansPro-Reg_0";
+.reg-ent {
+	font: 14px/70px "PFAgoraSansPro-Bold_0";
 	text-transform: uppercase;
 	color: $lightBlack;
+	text-align: right;
+	word-spacing: 10px;
 }
 
-.ent-reg__entrance {
-	font-family: "Conv_PFAgoraSansPro-Bold_0";
+.reg-ent__item {
+	cursor: pointer;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		display: block;
+		content: " ";
+		border: 20px solid transparent;	border-bottom: 20px solid $green;
+		top: 0px;
+		right: 50%;
+		margin-right: -20px;
+		display: none;
+	}
+
+}
+
+.reg-ent__item_type_active {
+	font-family: "PFAgoraSansPro-Reg_0";
+	color: $green;
+
+
+}
+
+.reg-ent__form {
+	background: $green;
+	text-align: left;
+	padding: 22px;
+	position: absolute;
+	right: 0;
+	top: 40px;
+	cursor: default;
+	display: none;
+}
+
+.reg-ent__form-inp {
+	width: 285px;
+	font: 16px "PFAgoraSansPro-Reg_0";
+	height: 40px;
+
+	@include border-radius(0);
 }

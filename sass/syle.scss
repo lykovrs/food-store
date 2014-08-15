@@ -29,6 +29,7 @@ body {
 .header {
 	background: $white;
 	border-bottom: 1px solid $ligtGray;
+	padding: 15px 0 10px;
 }
 
 .header__inner {
@@ -39,6 +40,7 @@ body {
 
 @import "elements/logo";
 @import "elements/reg-ent";
+
 
 /* Middle
 -----------------------------------------------------------------------------*/
