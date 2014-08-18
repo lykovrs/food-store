@@ -6,11 +6,17 @@ $(document).ready(function(){
 	var reg = $(".reg-ent__item");
 
 
-	reg.on("click", function(){
-		$(this).toggleClass("reg-ent__item_type_active");
-		$(this).find(".reg-ent__form").fadeToggle();
-//		$(this).before.fadeToggle();
+//	reg.on("click", function(){
+//		$(this).toggleClass("reg-ent__item_type_active");
+//		$(this).find(".reg-ent__form").fadeToggle();
+////		$(this).before.fadeToggle();
+//
+//	});
 
-	});
+//	Всплывающее окно регистрации
+
+	$(".reg-ent__item").popover();
+
+
 });
 

@@ -1,0 +1,17 @@
+@import "../base";
+
+.copyright {
+	color: $white;
+	font: 14px "pfagorasanspro-reg_0";
+	padding-top: 10px;
+}
+
+.copyright__link {
+	color: $white;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+		color: $white;
+	}
+}

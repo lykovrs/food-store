@@ -1,0 +1,47 @@
+@import "../base";
+
+.slider {
+	background: $blue;
+
+	.carousel-inner {
+//		max-height: 466px;
+	}
+
+	.carousel-indicators {
+		right: 15px;
+		left: auto;
+		width: auto;
+		margin-left: 0;
+		top: 35px
+	}
+
+	.carousel-indicators li {
+		width: 16px;
+		height: 16px;
+		margin: 0 0 0 25px;
+
+		&:hover {
+			border-color: $green;
+			background: transparent;
+		}
+	}
+
+	.carousel-caption {
+		font: 36px/54px "PFAgoraSansPro-Thin";
+		width: 40%;
+		text-align: left;
+		right: auto;
+		left: 15px;
+		bottom: auto;
+		top: 35px;
+		text-shadow: none;
+	}
+
+	.slider__btn {
+		display: block;
+		margin-top: 45px;
+		width: 220px;
+	}
+
+
+}

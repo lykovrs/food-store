@@ -38,7 +38,7 @@
 	padding: 22px;
 	position: absolute;
 	right: 0;
-	top: 40px;
+	top: 34px;
 	cursor: default;
 	display: none;
 }
@@ -49,4 +49,39 @@
 	height: 40px;
 
 	@include border-radius(0);
+}
+
+.reg-ent__btn {
+	background: $yellow;
+	color: $white;
+	font: 20px "PFAgoraSansPro-Reg_0";
+	border: transparent;
+	height: 40px;
+
+	@include border-radius(0);
+	@include min-width(145px);
+
+	&:hover {
+		background: $light-yellow;
+		color: $white;
+	}
+
+}
+
+.reg-ent__link {
+	font: 16px "pfagorasanspro-reg_0";
+	color: $white;
+	text-decoration: underline;
+	text-transform: none;
+	word-spacing: normal;
+	display: inline-block;
+	width: 44%;
+	text-align: right;
+
+
+	&:hover {
+		color: $white;
+		text-decoration: none;
+	}
+
 }

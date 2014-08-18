@@ -1,0 +1,32 @@
+@import "../base";
+
+.btn {
+	font: 14px "pfagorasanspro-thin";
+}
+
+.btn-default {
+
+}
+
+.btn-primary {
+	background-color: transparent;
+	border: 2px solid $white;
+	color: $white;
+
+	@include border-radius(0);
+
+	&:hover {
+		color: $green;
+		border-color: $green;
+		background: transparent;
+	}
+
+
+
+}
+
+.btn-lg {
+	font-size: 22px;
+
+//	@include min-width(220px);
+}

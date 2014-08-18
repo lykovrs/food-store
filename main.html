@@ -29,20 +29,22 @@
                     <span class="reg-ent__item">вход
 
                     </span>  /
-                    <span class="reg-ent__item" href="#">регистрация
-                     <div class="reg-ent__form">
-                         <form role="form">
-                             <div class="form-group">
+                    <span class="reg-ent__item" href="#"  data-container="body" data-toggle="popover" data-placement="bottom" data-content="2">регистрация
 
-                                 <input type="login" class="reg-ent__form-inp form-control" id="exampleInputEmail1" placeholder="Логин">
-                             </div>
-                             <div class="form-group">
-                                 <input type="password" class="reg-ent__form-inp form-control" id="exampleInputPassword1" placeholder="Пароль">
 
-                             </div>
-                             <button type="submit" class="btn btn-default">Submit</button>
-                         </form>
-                     </div>
+                     <!--<div class="reg-ent__form">-->
+                         <!--<form role="form">-->
+                             <!--<div class="form-group">-->
+
+                                 <!--<input type="login" class="reg-ent__form-inp form-control" id="exampleInputEmail1" placeholder="Логин">-->
+                             <!--</div>-->
+                             <!--<div class="form-group">-->
+                                 <!--<input type="password" class="reg-ent__form-inp form-control" id="exampleInputPassword1" placeholder="Пароль">-->
+
+                             <!--</div>-->
+                             <!--<button type="submit" class="reg-ent__btn btn btn-default">Войти</button> <a class="reg-ent__link" href="#">Забыли пароль?</a>-->
+                         <!--</form>-->
+                     <!--</div>-->
                     </span>
 
                 </div>
@@ -52,13 +54,74 @@
         </header><!-- .header-->
 
         <main class="content">
+            <div class="slider">
+                <div id="carousel-example-generic" class="contet-box row carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/slide_1.png" alt="1">
+                            <div class="carousel-caption">
+                                Разработаем индивидуальный план питания
+                                и доставим на дом<br/>
+                                <a class="btn btn-primary btn-lg slider__btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/slide_1.png" alt="2">
+                            <div class="carousel-caption">
+                                Разработаем индивидуальный план питания
+                                и доставим на дом
+                                <a class="btn btn-primary btn-lg slider__btn">Подробнее</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!--&lt;!&ndash; Controls &ndash;&gt;-->
+                    <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">-->
+                        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+                    <!--</a>-->
+                    <!--<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">-->
+                        <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+                    <!--</a>-->
+                </div>
+
+
+
+            </div>
+
+
             <strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue. Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.
+
+
         </main><!-- .content -->
 
     </div><!-- .wrapper -->
 
     <footer class="footer">
-        <strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+        <div class="contet-box row">
+            <div class="col-lg-3 copyright">
+                Exclusively designed by <a class="copyright__link" href="#">kvazard</a>
+            </div>
+            <div class="col-lg-6 social">
+                <a class="social__item social__item_type_fb" href="https://www.facebook.com/"></a>
+                <a class="social__item social__item_type_tw" href="https://twitter.com/"></a>
+                <a class="social__item social__item_type_be" href="https://vk.com/"></a>
+                <a class="social__item social__item_type_vm" href="https://vimeo.com/"></a>
+                <a class="social__item social__item_type_yt" href="http://www.youtube.com/"></a>
+            </div>
+            <div class="col-lg-3 copyright">
+                © 2014 Awesome Noname Sait
+            </div>
+
+        </div>
     </footer><!-- .footer -->
 </body>
 </html>

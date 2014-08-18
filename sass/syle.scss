@@ -1,6 +1,7 @@
 @import "../bower_components/twbs-bootstrap-sass/assets/stylesheets/bootstrap";
 @import "base";
 @import "compass";
+@import "elements/button";
 
 html {
 	height: 100%;
@@ -48,6 +49,7 @@ body {
 	padding: 0 0 144px;
 }
 
+@import "elements/slider";
 
 /* Footer
 -----------------------------------------------------------------------------*/
@@ -57,4 +59,8 @@ body {
 	height: 144px;
 	background: $yellow;
 	position: relative;
+	padding-top: 59px;
 }
+
+@import "elements/copyright";
+@import "elements/social";
