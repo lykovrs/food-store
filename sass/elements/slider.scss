@@ -41,7 +41,18 @@
 		display: block;
 		margin-top: 45px;
 		width: 220px;
+		font: 14px "pfagorasanspro-thin";
+		background-color: transparent;
+		border: 2px solid $white;
+		color: $white;
+		font-size: 22px;
+
+		@include border-radius(0);
+
+		&:hover {
+			color: $green;
+			border-color: $green;
+			background: transparent;
+		}
 	}
-
-
 }

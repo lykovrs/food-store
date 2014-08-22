@@ -1,0 +1,24 @@
+@import "../base";
+
+.filters {
+	background: $yellow;
+}
+
+.filters__header {
+	font: 30px "pfagorasanspro-light";
+	text-transform: uppercase;
+	color: $white;
+	margin: 25px 0;
+}
+
+.filters__ctrls {
+	margin-bottom: 30px;
+}
+
+.filters__check {
+	font: 18px 'Open Sans', sans-serif;
+	color: $white;
+	margin: 30px 0;
+}
+
+

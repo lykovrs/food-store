@@ -18,5 +18,19 @@ $(document).ready(function(){
 	$(".reg-ent__item").popover();
 
 
+	var data = [
+		{ "value": "Сахар", "label": "Сахар" },
+		{ "value": "Сайра", "label": "Сайра" },
+		{ "value": "Саке", "label": "Саке" },
+		{ "value": "Салака", "label": "Салака" },
+		{ "value": "Салат", "label": "Салат" },
+		{ "value": "Сало", "label": "Сало" },
+		{ "value": "Салями", "label": "Салями" }
+	];
+
+	$(function () {
+		$('.ctrl__input-ing').autocompleter({ source: data, limit: 6 });
+	});
+
 });
 

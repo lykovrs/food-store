@@ -7,8 +7,10 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="stylesheets/syle.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/Autocompleter/jquery.autocompleter.min.js" type="text/javascript"></script>
     <script src="bower_components/twbs-bootstrap-sass/assets/javascripts/bootstrap.js"></script>
     <script src="js/main.js"></script>
 </head>
@@ -36,10 +38,10 @@
                          <!--<form role="form">-->
                              <!--<div class="form-group">-->
 
-                                 <!--<input type="login" class="reg-ent__form-inp form-control" id="exampleInputEmail1" placeholder="Логин">-->
+                                 <!--<input class="filters__checkbox" type="login" class="reg-ent__form-inp form-control" id="exampleInputEmail1" placeholder="Логин">-->
                              <!--</div>-->
                              <!--<div class="form-group">-->
-                                 <!--<input type="password" class="reg-ent__form-inp form-control" id="exampleInputPassword1" placeholder="Пароль">-->
+                                 <!--<input class="filters__checkbox" type="password" class="reg-ent__form-inp form-control" id="exampleInputPassword1" placeholder="Пароль">-->
 
                              <!--</div>-->
                              <!--<button type="submit" class="reg-ent__btn btn btn-default">Войти</button> <a class="reg-ent__link" href="#">Забыли пароль?</a>-->
@@ -61,7 +63,6 @@
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                     </ol>
-
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
@@ -69,7 +70,7 @@
                             <div class="carousel-caption">
                                 Разработаем индивидуальный план питания
                                 и доставим на дом<br/>
-                                <a class="btn btn-primary btn-lg slider__btn">Подробнее</a>
+                                <a class="btn btn-lg slider__btn">Подробнее</a>
                             </div>
                         </div>
                         <div class="item">
@@ -77,23 +78,51 @@
                             <div class="carousel-caption">
                                 Разработаем индивидуальный план питания
                                 и доставим на дом
-                                <a class="btn btn-primary btn-lg slider__btn">Подробнее</a>
+                                <a class="btn slider__btn">Подробнее</a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filters">
+                <div class="contet-box row">
+                    <div class="col-lg-9">
+                        <div class="filters__header">выберите ингредиенты Для поиска блюд:</div>
+
+                        <div class="row filters__ctrls">
+                            <div class="col-lg-4">
+                                <label class="ctrl__input-ing ">
+                                    <input type="text" class="ctrl__input form-control input-lg" placeholder="Выберите ингредиент">
+                                </label>
+
+                            </div>
+                            <div class="col-lg-4">
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                            </div>
+
                         </div>
 
 
                     </div>
+                    <div class="col-lg-3">
+                        <div class="filters__check ctrl-checkbox">
+                            <input class="ctrl-checkbox" id="veg" type="checkbox" name="first" checked hidden />
+                            <label for="veg">Вегетанизируй</label>
+                        </div>
 
-                    <!--&lt;!&ndash; Controls &ndash;&gt;-->
-                    <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">-->
-                        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
-                    <!--</a>-->
-                    <!--<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">-->
-                        <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
-                    <!--</a>-->
+                    </div>
+
                 </div>
 
-
+                <p>
+                    <button type="button" class="btn btn-primary btn-primary_type_find btn-lg">Найти блюдО</button>
+                    <button type="button" class="btn btn-default btn-lg">Найти блюдО</button>
+                </p>
 
             </div>
 

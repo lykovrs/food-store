@@ -1,0 +1,41 @@
+@import "../base";
+
+.ctrl__input {
+	border: none;
+	padding: 0 20px;
+	font: 16px "open sans";
+	color: $lightBlack;
+	position: relative;
+	display: inline-block;
+
+	&:before {
+		display: block;
+		position: absolute;
+		right: 0;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background: #cfc url("../images/site-icons.png") -78px -24px no-repeat;
+
+
+	}
+
+	@include border-radius(0);
+
+//	&:focus {
+//		border-color: none;
+//	}
+}
+
+.ctrl__input-ing {
+	&:after {
+		display: block;
+//		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background: #cfc url("../images/site-icons.png") -78px -24px no-repeat;
+
+
+	}
+}
