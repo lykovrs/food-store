@@ -1,0 +1,105 @@
+@import "../base";
+
+.guide {
+        background: $green;
+        padding: 15px 0;
+}
+
+.guide__header {
+        padding: 0 15px;
+        text-align: center;
+        font: 30px "pfagorasanspro-thin";
+        color: $white;
+        text-transform: uppercase;
+}
+
+.guide__items {
+        text-align: center;
+        padding: 7px 0;
+        margin-bottom: 0;
+}
+
+.guide__item {
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        margin-left: 57px;
+        text-align: center;
+
+        &:after,
+        &:before {
+                content: "";
+                display: block;
+                height: 11px;
+                width: 11px;
+                background: $light-blue;
+                position: absolute;
+                top: 50%;
+                margin-top: -29px;
+
+
+                @include border-radius(11px);
+        }
+
+        &:after {
+                left: -22px;
+        }
+
+        &:before {
+                left: -44px;
+        }
+
+        &:first-child {
+                margin-left: 0;
+
+                &:after,
+                &:before {
+                        display: none;
+                }
+        }
+
+        a {
+                font: 20px/43px "pfagorasanspro-xthin";
+                color: $white;
+                text-align: center;
+
+                &:before {
+                        content: "";
+                        display: block;
+                        width: 122px;
+                        height: 122px;
+                        border: 3px solid $green;
+                        text-decoration: none;
+                        background: $light-blue url($site-icons-lnk) no-repeat;
+
+                        @include border-radius(116px);
+                }
+
+                &:hover {
+                        color: $yellow;
+                        text-decoration: none;
+
+                        &:before {
+                               border-color: $yellow;
+                        }
+                }
+        }
+}
+
+.guide__item_t_choose a {
+        &:before {
+                background-position: -192px 31px;
+        }
+}
+
+.guide__item_t_order a {
+        &:before {
+                background-position: -371px 31px;
+        }
+}
+
+.guide__item_t_enjoy a {
+        &:before {
+                background-position: -550px 31px;
+        }
+}

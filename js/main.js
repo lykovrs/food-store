@@ -1,36 +1,61 @@
 /**
  * Created by rlykov on 15.08.2014.
  */
+
 $(document).ready(function(){
-	//Форма регистрации или авторизаци
-	var reg = $(".reg-ent__item");
+    $('.login__trigger').click(function(){
+        $(this).next('.login__content').fadeToggle();
+        $(this).toggleClass('active');
+
+//        if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+//        else $(this).find('span').html('&#x25BC;')
+    });
 
 
-//	reg.on("click", function(){
-//		$(this).toggleClass("reg-ent__item_type_active");
-//		$(this).find(".reg-ent__form").fadeToggle();
-////		$(this).before.fadeToggle();
-//
-//	});
+    var substringMatcher = function(strs) {
+        return function findMatches(q, cb) {
+            var matches, substrRegex;
 
-//	Всплывающее окно регистрации
+            // an array that will be populated with substring matches
+            matches = [];
 
-	$(".reg-ent__item").popover();
+            // regex used to determine if a string contains the substring `q`
+            substrRegex = new RegExp(q, 'i');
 
+            // iterate through the pool of strings and for any string that
+            // contains the substring `q`, add it to the `matches` array
+            $.each(strs, function(i, str) {
+                if (substrRegex.test(str)) {
+                    // the typeahead jQuery plugin expects suggestions to a
+                    // JavaScript object, refer to typeahead docs for more info
+                    matches.push({ value: str });
+                }
+            });
 
-	var data = [
-		{ "value": "Сахар", "label": "Сахар" },
-		{ "value": "Сайра", "label": "Сайра" },
-		{ "value": "Саке", "label": "Саке" },
-		{ "value": "Салака", "label": "Салака" },
-		{ "value": "Салат", "label": "Салат" },
-		{ "value": "Сало", "label": "Сало" },
-		{ "value": "Салями", "label": "Салями" }
-	];
+            cb(matches);
+        };
+    };
 
-	$(function () {
-		$('.ctrl__input-ing').autocompleter({ source: data, limit: 6 });
-	});
+    var ingredients = [
+        "Сахар",
+        "Сайра",
+        "Саке",
+        "Салака",
+        "Салат",
+        "Сало",
+        "Салями"
+    ];
+
+    $('.typeahead').typeahead({
+            hint: true,
+            highlight: true,
+            minLength: 1
+        },
+        {
+            name: 'ingredients',
+            displayKey: 'value',
+            source: substringMatcher(ingredients)
+        });
 
 });
 

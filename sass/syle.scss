@@ -1,12 +1,15 @@
 @import "../bower_components/twbs-bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../bower_components/Autocompleter/src/jquery.autocompleter.css";
+//@import "../bower_components/Autocompleter/src/jquery.autocompleter.css";
 @import "base";
+
 @import "compass";
 @import "elements/button";
 @import "elements/autocompleter";
 
+
 html {
 	height: 100%;
+
 }
 
 body {
@@ -15,17 +18,16 @@ body {
 }
 .wrapper {
 	width: 100%;
-	min-width: 640px;
 
 	@include min-height(100%);
+        @include min-width(1170px)
 }
 
 .contet-box {
 	max-width: 1170px;
 	margin: auto;
-
-	@include min-width(768px)
 }
+
 
 /* Header
 -----------------------------------------------------------------------------*/
@@ -42,7 +44,7 @@ body {
 }
 
 @import "elements/logo";
-@import "elements/reg-ent";
+@import "elements/login";
 
 
 /* Middle
@@ -53,6 +55,8 @@ body {
 
 @import "elements/slider";
 @import "elements/filters";
+@import "elements/guide";
+@import "elements/reviews";
 @import "elements/ctrl-checkbox";
 @import "elements/ctrl-input";
 

@@ -1,28 +1,39 @@
 /*
 Error: Undefined mixin 'border-radius'.
-        on line 52 of C:/Users/Roman/Documents/food-store/sass/elements/reg-ent.scss, in `border-radius'
-        from line 52 of C:/Users/Roman/Documents/food-store/sass/elements/reg-ent.scss
+        on line 50 of C:/Users/Roman/Documents/food-store/sass/elements/slider.scss, in `border-radius'
+        from line 50 of C:/Users/Roman/Documents/food-store/sass/elements/slider.scss
 
-47: .reg-ent__form-inp {
-48: 	width: 285px;
-49: 	font: 16px "PFAgoraSansPro-Reg_0";
-50: 	height: 40px;
+45: 		background-color: transparent;
+46: 		border: 2px solid $white;
+47: 		color: $white;
+48: 		font-size: 22px;
+49: 
+50: 		@include border-radius(0);
 51: 
-52: 	@include border-radius(0);
-53: }
-54: 
-55: .reg-ent__btn {
-56: 	background: $yellow;
-57: 	color: $white;
+52: 		&:hover {
+53: 			color: $green;
+54: 			border-color: $green;
+55: 			background: transparent;
 
 Backtrace:
-C:/Users/Roman/Documents/food-store/sass/elements/reg-ent.scss:52:in `border-radius'
-C:/Users/Roman/Documents/food-store/sass/elements/reg-ent.scss:52
+C:/Users/Roman/Documents/food-store/sass/elements/slider.scss:50:in `border-radius'
+C:/Users/Roman/Documents/food-store/sass/elements/slider.scss:50
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:331:in `block in visit_mixin'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:115:in `with_frame'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:98:in `with_mixin'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:329:in `visit_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:412:in `block (2 levels) in visit_rule'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:412:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:412:in `block in visit_rule'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:410:in `visit_rule'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.0/lib/sass/stack.rb:79:in `block in with_base'
@@ -74,4 +85,4 @@ C:/Ruby200-x64/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'border-radius'.\A         on line 52 of C:/Users/Roman/Documents/food-store/sass/elements/reg-ent.scss, in `border-radius'\A         from line 52 of C:/Users/Roman/Documents/food-store/sass/elements/reg-ent.scss\A \A 47: .reg-ent__form-inp {\A 48: 	width: 285px;\A 49: 	font: 16px \"PFAgoraSansPro-Reg_0\";\A 50: 	height: 40px;\A 51: \A 52: 	@include border-radius(0);\A 53: }\A 54: \A 55: .reg-ent__btn {\A 56: 	background: $yellow;\A 57: 	color: $white;"; }
+  content: "Error: Undefined mixin 'border-radius'.\A         on line 50 of C:/Users/Roman/Documents/food-store/sass/elements/slider.scss, in `border-radius'\A         from line 50 of C:/Users/Roman/Documents/food-store/sass/elements/slider.scss\A \A 45: 		background-color: transparent;\A 46: 		border: 2px solid $white;\A 47: 		color: $white;\A 48: 		font-size: 22px;\A 49: \A 50: 		@include border-radius(0);\A 51: \A 52: 		&:hover {\A 53: 			color: $green;\A 54: 			border-color: $green;\A 55: 			background: transparent;"; }

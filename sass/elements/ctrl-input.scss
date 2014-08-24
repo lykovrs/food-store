@@ -2,40 +2,82 @@
 
 .ctrl__input {
 	border: none;
-	padding: 0 20px;
+        background: $white;
 	font: 16px "open sans";
 	color: $lightBlack;
 	position: relative;
-	display: inline-block;
 
-	&:before {
-		display: block;
-		position: absolute;
-		right: 0;
-		content: "";
-		width: 10px;
-		height: 10px;
-		background: #cfc url("../images/site-icons.png") -78px -24px no-repeat;
-
-
-	}
 
 	@include border-radius(0);
 
-//	&:focus {
-//		border-color: none;
-//	}
+        &:focus {
+                border: none;
+                box-shadow: none;
+        }
 }
 
 .ctrl__input-ing {
+        position: relative;
+        background: $white;
+        display: block;
+
+        &:focus {
+                border: none;
+                box-shadow: none;
+        }
+
 	&:after {
 		display: block;
-//		position: absolute;
+                right: 22px;
+                top: 50%;
+		position: absolute;
 		content: "";
 		width: 10px;
 		height: 10px;
-		background: #cfc url("../images/site-icons.png") -78px -24px no-repeat;
-
+		background: url($site-icons-lnk) -24px -78px no-repeat;
 
 	}
+
+        .ctrl__input {
+                padding-right: 35px;
+        }
+
+        .tt-hint {
+                color: #999
+        }
+
+        .tt-dropdown-menu {
+                background-color: #fff;
+                width: 100%;
+                border-top: 1px solid #c3c3c3;
+                border-left: 1px solid $ligtGray;
+                border-right: 1px solid $ligtGray;
+                border-bottom: 1px solid $ligtGray;
+
+        }
+
+        .tt-suggestion {
+                padding: 0 16px;
+                font: 16px "open sans";
+                color: $lightBlack;
+                width: 100%;
+                line-height: 48px;
+                border-bottom: 1px solid $ligtGray;
+                border-top: 1px solid transparent;
+        }
+
+        .tt-suggestion.tt-cursor {
+                color: $green;
+                border: 3px solid $green;
+                line-height: 44px;
+                padding: 0 13px;
+        }
+
+        .tt-suggestion p {
+                margin: 0;
+        }
+}
+
+.input-lg {
+        height: 50px;
 }

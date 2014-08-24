@@ -10,8 +10,8 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/Autocompleter/jquery.autocompleter.min.js" type="text/javascript"></script>
     <script src="bower_components/twbs-bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/typeahead.js/dist/typeahead.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -20,35 +20,40 @@
         <header class="header">
 
             <div class="contet-box row">
-                <div class="logo page-header col-lg-8">
+                <div class="logo page-header col-sm-8">
                      <span class="logo__img">
                     <a href="/">logotype</a>
                     <span class="logo__separator">|</span>
                     <small class="logo__slogan">В масштабах страны, в интересах каждого!</small>
                 </span>
                 </div>
-                <div class="reg-ent col-lg-4">
-                    <span class="reg-ent__item">вход
+                <div class="col-md-4">
+                    <nav  class="login-wrapper">
+                        <ul>
+                            <li class="login">
+                                <a class="login__trigger" href="#">
+                                    Вход
+                                </a>
+                                <div class="login__content">
+                                    <form>
+                                        <fieldset class="inputs">
+                                            <input class="inputs__form-inp username" type="login" name="login" placeholder="Логин" required>
+                                            <input class="inputs__form-inp password" type="password" name="Password" placeholder="Пароль" required>
+                                        </fieldset>
+                                        <fieldset id="actions">
+                                            <input type="submit" class="actions__submit" value="Войти">
+                                            <a class="actions__pass" href="">Забыли пароль?</a>
 
-                    </span>  /
-                    <span class="reg-ent__item" href="#"  data-container="body" data-toggle="popover" data-placement="bottom" data-content="2">регистрация
-
-
-                     <!--<div class="reg-ent__form">-->
-                         <!--<form role="form">-->
-                             <!--<div class="form-group">-->
-
-                                 <!--<input class="filters__checkbox" type="login" class="reg-ent__form-inp form-control" id="exampleInputEmail1" placeholder="Логин">-->
-                             <!--</div>-->
-                             <!--<div class="form-group">-->
-                                 <!--<input class="filters__checkbox" type="password" class="reg-ent__form-inp form-control" id="exampleInputPassword1" placeholder="Пароль">-->
-
-                             <!--</div>-->
-                             <!--<button type="submit" class="reg-ent__btn btn btn-default">Войти</button> <a class="reg-ent__link" href="#">Забыли пароль?</a>-->
-                         <!--</form>-->
-                     <!--</div>-->
-                    </span>
-
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="login__separator">/</li>
+                            <li class="login__signup">
+                                <a href="">Регистрация</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
             </div>
@@ -56,7 +61,7 @@
         </header><!-- .header-->
 
         <main class="content">
-            <div class="slider">
+            <section class="slider">
                 <div id="carousel-example-generic" class="contet-box row carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -78,56 +83,105 @@
                             <div class="carousel-caption">
                                 Разработаем индивидуальный план питания
                                 и доставим на дом
-                                <a class="btn slider__btn">Подробнее</a>
+                                <a class="btn btn-lg slider__btn">Подробнее</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="filters">
+            <section class="filters">
+                <form action="">
+                    <div class="contet-box row">
+                        <div class="col-sm-9">
+                            <div class="filters__hint filters__hint_type_l">1. Выберете состав блюда</div>
+                            <div class="filters__header">
+                                выберите ингредиенты Для поиска блюд:
+                            </div>
+                            <div class="row filters__ctrls">
+                                <div class="col-sm-4">
+                                    <label class="ctrl__input-ing">
+                                        <input class="ctrl__input form-control input-lg typeahead" type="text" placeholder="Выберите ингредиент">
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="ctrl__input-ing">
+                                    <input class="ctrl__input form-control input-lg typeahead" type="text" placeholder="Выберите ингредиент">
+                                    </label>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <label class="ctrl__input-ing">
+                                        <input class="ctrl__input form-control input-lg typeahead" type="text" placeholder="Выберите ингредиент">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="filters__hint filters__check_type_r">2. Ознакомьтесь с меню</div>
+                            <div class="filters__check ctrl-checkbox">
+                                <input class="ctrl-checkbox" id="veg" type="checkbox" name="first" checked hidden />
+                                <label for="veg">Вегетанизируй</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-primary_type_find btn-lg">Найти блюдО</button>
+                        </div>
+
+                    </div>
+                </form>
+            </section>
+
+            <section class="guide">
                 <div class="contet-box row">
-                    <div class="col-lg-9">
-                        <div class="filters__header">выберите ингредиенты Для поиска блюд:</div>
-
-                        <div class="row filters__ctrls">
-                            <div class="col-lg-4">
-                                <label class="ctrl__input-ing ">
-                                    <input type="text" class="ctrl__input form-control input-lg" placeholder="Выберите ингредиент">
-                                </label>
-
-                            </div>
-                            <div class="col-lg-4">
-
-                            </div>
-
-                            <div class="col-lg-4">
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="filters__check ctrl-checkbox">
-                            <input class="ctrl-checkbox" id="veg" type="checkbox" name="first" checked hidden />
-                            <label for="veg">Вегетанизируй</label>
-                        </div>
-
-                    </div>
-
+                    <h3 class="guide__header">КАК это работает:</h3>
+                    <ul class="guide__items">
+                        <li class="guide__item guide__item_t_choose"><a href="#">1.Выбирайте</a></li>
+                        <li class="guide__item guide__item_t_order"><a href="#">2.Заказывайте</a></li>
+                        <li class="guide__item guide__item_t_enjoy"><a href="#">3.Наслаждайтесь!</a></li>
+                    </ul>
                 </div>
+            </section>
 
-                <p>
-                    <button type="button" class="btn btn-primary btn-primary_type_find btn-lg">Найти блюдО</button>
-                    <button type="button" class="btn btn-default btn-lg">Найти блюдО</button>
-                </p>
-
-            </div>
-
-
-            <strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue. Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.
+            <section class="reviews">
+                <div class="contet-box row">
+                    <h3 class="reviews__header">Отзывы пользователей</h3>
+                    <div class="col-md-4">
+                        <div class="media reviews__item">
+                            <span class="pull-left">
+                                <img class="media-object" src="images/user.png" width="68" height="68" alt="user">
+                            </span>
+                            <div class="media-body">
+                                <h4 class="media-heading">Иван Иванов </h4>
+                                <p class="media-heading__leg">о ресторане “Тарас Бульба”</p>
+                                <p>В России произведен первый успешный запуск новейшей ракеты-носителя "Ангара". Об этом как о выполнении задачи государственной важности доложил Владимиру Путину глава Минобороны Сергей Шойгу.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media reviews__item">
+                            <span class="pull-left">
+                                <img class="media-object" src="images/user.png" width="68" height="68" alt="user">
+                            </span>
+                            <div class="media-body">
+                                <h4 class="media-heading">Иван Петров</h4>
+                                <p class="media-heading__leg">о ресторане “Макдоналдс”</p>
+                                <p>В России произведен первый успешный запуск новейшей ракеты-носителя "Ангара". Об этом как о выполнении задачи государственной важности доложил Владимиру Путину глава Минобороны Сергей Шойгу.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media reviews__item">
+                            <span class="pull-left">
+                                <img class="media-object" src="images/user.png" width="68" height="68" alt="user">
+                            </span>
+                            <div class="media-body">
+                                <h4 class="media-heading">Иван Сидоров </h4>
+                                <p class="media-heading__leg">о ресторане “Пушкинъ”</p>
+                                <p>В России произведен первый успешный запуск новейшей ракеты-носителя "Ангара". Об этом как о выполнении задачи государственной важности доложил Владимиру Путину глава Минобороны Сергей Шойгу.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
         </main><!-- .content -->
@@ -136,17 +190,17 @@
 
     <footer class="footer">
         <div class="contet-box row">
-            <div class="col-lg-3 copyright">
+            <div class="col-xs-3 copyright">
                 Exclusively designed by <a class="copyright__link" href="#">kvazard</a>
             </div>
-            <div class="col-lg-6 social">
+            <div class="col-xs-6 social">
                 <a class="social__item social__item_type_fb" href="https://www.facebook.com/"></a>
                 <a class="social__item social__item_type_tw" href="https://twitter.com/"></a>
                 <a class="social__item social__item_type_be" href="https://vk.com/"></a>
                 <a class="social__item social__item_type_vm" href="https://vimeo.com/"></a>
                 <a class="social__item social__item_type_yt" href="http://www.youtube.com/"></a>
             </div>
-            <div class="col-lg-3 copyright">
+            <div class="col-xs-3 copyright">
                 © 2014 Awesome Noname Sait
             </div>
 

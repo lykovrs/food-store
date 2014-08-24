@@ -1,0 +1,119 @@
+@import "../base";
+
+.login-wrapper ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        float: right;
+}
+
+.login-wrapper li {
+        float: left;
+}
+
+.login__signup,
+.login__trigger {
+//        width: 100px;
+}
+
+.login__separator {
+        font: 14px/70px "PFAgoraSansPro-Reg_0";
+        width: 27px;
+        text-align: center;
+}
+
+.login__trigger,
+.login__signup a {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        font: 14px/70px "PFAgoraSansPro-Reg_0";
+        color: $green;
+        text-transform: uppercase;
+        text-align: right;
+        word-spacing: 10px;
+}
+
+.login__trigger:hover,
+.login .active,
+.login__signup a:hover {
+        font-family: "PFAgoraSansPro-Reg_0";
+        color: $lightBlack;
+        text-decoration: none;
+}
+
+.login__content {
+        display: none;
+        position: absolute;
+        top: 59px;
+        right: 0;
+        z-index: 999;
+        padding: 23px;
+        background: $green;
+
+        &:before {
+                position: absolute;
+                display: block;
+                content: " ";
+                border: 20px solid transparent;	border-bottom: 20px solid $green;
+                top: -35px;
+                right: 35px;
+        }
+}
+
+
+
+/*--------------------*/
+
+.actions {
+        margin: 10px 0 0 0;
+}
+
+.actions__submit {
+        background: $yellow;
+        color: $white;
+        font: 20px "PFAgoraSansPro-Reg_0";
+        border: transparent;
+        height: 40px;
+
+        @include border-radius(0);
+        @include min-width(145px);
+
+        &:hover,
+        &:focus,
+        &:active {
+                background: $light-yellow;
+                color: $white;
+        }
+}
+
+.inputs__form-inp {
+        width: 285px;
+        font: 16px "PFAgoraSansPro-Reg_0";
+        height: 40px;
+        margin-bottom: 19px;
+        padding: 0 10px;
+        border: 0;
+
+        @include border-radius(0);
+}
+
+
+.actions__pass {
+        font: 16px "pfagorasanspro-reg_0";
+        color: $white;
+        text-decoration: underline;
+        text-transform: none;
+        word-spacing: normal;
+        display: inline-block;
+        width: 44%;
+        text-align: right;
+
+
+        &:hover {
+                color: $white;
+                text-decoration: none;
+        }
+
+}

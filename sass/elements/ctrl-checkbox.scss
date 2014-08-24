@@ -25,15 +25,6 @@
 	}
 }
 
-
-
 .ctrl-checkbox[type="checkbox"]:checked + label::before {
 	background: $white url("../images/site-icons.png") 1px -69px  no-repeat;
 }
-
-//.ctrl-checkbox[type="checkbox"]:disabled + label::before {
-//	background-position: -152px -260px;
-//}
-//.ctrl-checkbox[type="checkbox"]:checked:disabled + label::before {
-//	background-position: -171px -260px;
-//}
