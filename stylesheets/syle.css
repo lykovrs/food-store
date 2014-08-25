@@ -9423,7 +9423,7 @@ body {
 
 /* line 3, ../sass/elements/filters.scss */
 .filters {
-  background: #d7a12c;
+  background: #d7a12c url("../images/bg_yellow.png");
   padding-bottom: 30px;
 }
 
@@ -9621,7 +9621,7 @@ body {
 
 /* line 3, ../sass/elements/guide.scss */
 .guide {
-  background: #7a962d;
+  background: #7a962d url("../images/bg_green.png");
   padding: 15px 0;
 }
 
@@ -10287,7 +10287,7 @@ body {
   margin: -144px auto 0;
   min-width: 640px;
   height: 144px;
-  background: #d7a12c;
+  background: #d7a12c url("../images/bg_yellow.png");
   position: relative;
   padding-top: 59px;
 }
