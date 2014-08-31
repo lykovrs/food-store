@@ -3,10 +3,6 @@
 .slider {
 	background: $blue;
 
-	.carousel-inner {
-//		max-height: 466px;
-	}
-
 	.carousel-indicators {
 		right: 15px;
 		left: auto;
@@ -27,7 +23,7 @@
 	}
 
 	.carousel-caption {
-		font: 36px/54px "PFAgoraSansPro-Thin";
+		font: 300 36px/54px "open sans";
 		width: 40%;
 		text-align: left;
 		right: auto;
@@ -41,11 +37,11 @@
 		display: block;
 		margin-top: 45px;
 		width: 220px;
-		font: 14px "pfagorasanspro-thin";
+		font: 14px "open sans";
 		background-color: transparent;
 		border: 2px solid $white;
 		color: $white;
-		font-size: 22px;
+		font-size: 20px;
 
 		@include border-radius(0);
 

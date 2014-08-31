@@ -5,8 +5,16 @@
         padding-bottom: 30px;
 }
 
+.filters_t_fixed {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 98px;
+        z-index: 1400;
+}
+
 .filters__header {
-	font: 30px "pfagorasanspro-light";
+	font: 28px "open sans";
 	text-transform: uppercase;
 	color: $white;
 	margin: 25px 0;
@@ -15,19 +23,23 @@
 
 .filters__ctrls {
         position: relative;
+
+//        .col-xs-4 {
+//                padding: 0 13px;
+//        }
 }
 
 .filters__check {
 	font: 18px 'Open Sans', sans-serif;
 	color: $white;
-	margin: 27px 0;
+	margin: 28px 0;
 }
 
 .filters__hint {
         background: $green;
         color: $white;
         display: block;
-        font: 22px/49px "pfagorasanspro-thin";
+        font: 300 20px/49px "open sans";
         padding: 0 20px;
         position: absolute;
         top: -70px;

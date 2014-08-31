@@ -6,7 +6,7 @@
 }
 
 .logo__img {
-	font: 48px/57px "PFAgoraSansPro-Light";
+	font: 300 48px/57px "open sans";
 	color: $green;
 	text-transform: uppercase;
 	vertical-align: middle;
@@ -16,7 +16,6 @@
 
 	&:hover {
 		color: $green;
-
 	}
 
 	a {
@@ -28,7 +27,7 @@
 
 .logo__slogan {
 	color: $gray;
-	font: 18px/20px "PFAgoraSansPro-Thin";
+	font: 300 18px/20px "open sans";
 	text-transform: none;
 	vertical-align: middle;
 	letter-spacing: normal;

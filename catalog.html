@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="stylesheets/syle.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700|Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/twbs-bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/typehead.js/dist/typeahead.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header header_t_fixed">
+
+            <div class="content-box row">
+                <div class="logo page-header col-xs-8">
+                     <span class="logo__img">
+                    <a href="/">logotype</a>
+                    <span class="logo__separator">|</span>
+                    <small class="logo__slogan">В масштабах страны, в интересах каждого!</small>
+                </span>
+                </div>
+                <div class="col-md-4">
+                    <nav  class="login-wrapper">
+                        <ul class="login">
+                            <li class="login__enter">
+                                <a class="login__trigger" href="#">
+                                    Вход
+                                </a>
+                                <div class="login__content">
+                                    <form>
+                                        <fieldset class="inputs">
+                                            <input class="inputs__form-inp username" type="login" name="login" placeholder="Логин" required>
+                                            <input class="inputs__form-inp password" type="password" name="Password" placeholder="Пароль" required>
+                                        </fieldset>
+                                        <fieldset id="actions">
+                                            <input type="submit" class="actions__submit" value="Войти">
+                                            <a class="actions__pass" href="">Забыли пароль?</a>
+
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="login__separator">/</li>
+                            <li class="login__signup">
+                                <a href="">Регистрация</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+        </header><!-- .header-->
+
+        <main class="content">
+
+            <section class="filters filters_t_fixed">
+                <form action="">
+                    <div class="content-box row">
+                        <div class="col-xs-9">
+                            <div class="filters__header">
+                                выберите ингредиенты Для поиска блюд:
+                            </div>
+                            <div class="row filters__ctrls">
+                                <div class="col-xs-4">
+                                    <label class="ctrl__input-ing">
+                                        <input class="ctrl__input form-control input-lg typeahead" type="text" placeholder="Выберите ингредиент">
+                                    </label>
+                                </div>
+                                <div class="col-xs-4">
+                                    <label class="ctrl__input-ing">
+                                    <input class="ctrl__input form-control input-lg typeahead" type="text" placeholder="Выберите ингредиент">
+                                    </label>
+                                </div>
+
+                                <div class="col-xs-4">
+                                    <label class="ctrl__input-ing">
+                                        <input class="ctrl__input form-control input-lg typeahead" type="text" placeholder="Выберите ингредиент">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="filters__check ctrl-checkbox">
+                                <input class="ctrl-checkbox" id="veg" type="checkbox" name="first" checked hidden />
+                                <label for="veg">Вегетанизируй</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-primary_type_find btn-lg">Найти блюдО</button>
+                        </div>
+
+                    </div>
+                </form>
+            </section>
+
+            <section class="catalog">
+                <div class="content-box row">
+                    <div class="col-sm-3">
+                        <div class="catalog__item">
+                            <img src="images/catalog/small/cat_size-3_1.jpg" class="catalog__i-pic" alt="Блюдо">
+                            <div class="catalog__i-elem catalog__i-elem_t_name">PRONTO</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_header">Пицца Мясной Пир</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_price">550 &#8381;</div>                                        <button type="submit" class="btn btn-primary btn-lg catalog__i-elem_t_btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="catalog__item"  data-toggle="modal" data-target="#myModal">
+                            <img src="images/catalog/small/cat_size-9_1.jpg" class="catalog__i-pic" alt="Блюдо">
+                            <div class="catalog__i-elem catalog__i-elem_t_name">PRONTO</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_header">Пицца Мясной Пир</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_price">550 &#8381;</div>                                        <button type="submit" class="btn btn-primary btn-lg catalog__i-elem_t_btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="catalog__item">
+                            <img src="images/catalog/small/cat_size-3_2.jpg" class="catalog__i-pic" alt="Блюдо">
+                            <div class="catalog__i-elem catalog__i-elem_t_name">PRONTO</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_header">Пицца Мясной Пир</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_price">550 &#8381;</div>                                        <button type="submit" class="btn btn-primary btn-lg catalog__i-elem_t_btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="catalog__item">
+                            <img src="images/catalog/small/cat_size-3_3.jpg" class="catalog__i-pic" alt="Блюдо">
+                            <div class="catalog__i-elem catalog__i-elem_t_name">PRONTO</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_header">Пицца Мясной Пир</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_price">550 &#8381;</div>                                        <button type="submit" class="btn btn-primary btn-lg catalog__i-elem_t_btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="catalog__item">
+                            <img src="images/catalog/small/cat_size-6_1.jpg" class="catalog__i-pic" alt="Блюдо">
+                            <div class="catalog__i-elem catalog__i-elem_t_name">PRONTO</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_header">Пицца Мясной Пир</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_price">550 &#8381;</div>                                        <button type="submit" class="btn btn-primary btn-lg catalog__i-elem_t_btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="catalog__item">
+                            <img src="images/catalog/small/cat_size-6_2.jpg" class="catalog__i-pic" alt="Блюдо">
+                            <div class="catalog__i-elem catalog__i-elem_t_name">PRONTO</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_header">Пицца Мясной Пир</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_price">550 &#8381;</div>                                        <button type="submit" class="btn btn-primary btn-lg catalog__i-elem_t_btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="catalog__item">
+                            <img src="images/catalog/small/cat_size-6_3.jpg" class="catalog__i-pic" alt="Блюдо">
+                            <div class="catalog__i-elem catalog__i-elem_t_name">PRONTO</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_header">Пицца Мясной Пир</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_price">550 &#8381;</div>                                        <button type="submit" class="btn btn-primary btn-lg catalog__i-elem_t_btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="catalog__item">
+                            <img src="images/catalog/small/cat_size-3_4.jpg" class="catalog__i-pic" alt="Блюдо">
+                            <div class="catalog__i-elem catalog__i-elem_t_name">PRONTO</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_header">Пицца Мясной Пир</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_price">550 &#8381;</div>                                        <button type="submit" class="btn btn-primary btn-lg catalog__i-elem_t_btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="catalog__item">
+                            <img src="images/catalog/small/cat_size-3_5.jpg" class="catalog__i-pic" alt="Блюдо">
+                            <div class="catalog__i-elem catalog__i-elem_t_name">PRONTO</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_header">Пицца Мясной Пир</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_price">550 &#8381;</div>                                        <button type="submit" class="btn btn-primary btn-lg catalog__i-elem_t_btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="catalog__item">
+                            <img src="images/catalog/small/cat_size-3_6.jpg" class="catalog__i-pic" alt="Блюдо">
+                            <div class="catalog__i-elem catalog__i-elem_t_name">PRONTO</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_header">Пицца Мясной Пир</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_price">550 &#8381;</div>                                        <button type="submit" class="btn btn-primary btn-lg catalog__i-elem_t_btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="catalog__item">
+                            <img src="images/catalog/small/cat_size-3_7.jpg" class="catalog__i-pic" alt="Блюдо">
+                            <div class="catalog__i-elem catalog__i-elem_t_name">PRONTO</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_header">Пицца Мясной Пир</div>
+                            <div class="catalog__i-elem catalog__i-elem_t_price">550 &#8381;</div>                                        <button type="submit" class="btn btn-primary btn-lg catalog__i-elem_t_btn">Заказать</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+
+
+
+        </main><!-- .content -->
+
+    </div><!-- .wrapper -->
+
+    <footer class="footer">
+        <div class="content-box row">
+            <div class="col-xs-3 copyright">
+                Exclusively designed by <a class="copyright__link" href="#">kvazard</a>
+            </div>
+            <div class="col-xs-6 social">
+                <a class="social__item social__item_type_fb" href="https://www.facebook.com/"></a>
+                <a class="social__item social__item_type_tw" href="https://twitter.com/"></a>
+                <a class="social__item social__item_type_be" href="https://vk.com/"></a>
+                <a class="social__item social__item_type_vm" href="https://vimeo.com/"></a>
+                <a class="social__item social__item_type_yt" href="http://www.youtube.com/"></a>
+            </div>
+            <div class="col-xs-3 copyright">
+                © 2014 Awesome Noname Sait
+            </div>
+
+        </div>
+    </footer><!-- .footer -->
+
+    <!-- Modal -->
+    <div class="modal fade c-popup" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-content c-popup__content">
+                <div class="c-popup row">
+                    <div class="col-xs-6 c-popup__col">
+                        <img src="images/catalog/big/c_popup.jpg" class="c-popup__img" alt="big-pic">
+                        <div class="c-popup__header">Жареные грибы
+                            по-деревенски</div>
+                    </div>
+                    <div class="col-xs-6 c-popup__col">
+                        <div class="c-popup__e-type">
+                            <img src="images/food-type/eat-type-pizza.jpg" alt=""/>
+                        </div>
+                        <div class="c-popup__e-name">
+                            Виват Пицца
+                        </div>
+                        <div class="c-popup__contacts row">
+                            <div class="c-popup__addr">
+                                <span class="c-popup__type-addr"> Адрес:</span>
+                                <a href="" class="c-popup__addr-link">ул. Петрозаводская, 24Б</a>
+                            </div>
+                            <div class="col-xs-6 c-popup__contacts-tel">
+                                <span class="c-popup__type-addr">Телефон:</span>
+                                <span class="c-popup__text">(495) 451-0786</span>
+                            </div>
+                            <div class="col-xs-6 c-popup__contacts-mode">
+                                <span class="c-popup__type-addr">Режим работы:</span>
+                                <span class="c-popup__text"> с 11:00 до 2:00</span>
+                            </div>
+
+                        </div>
+                        <p class="c-popup__description"><b>Состав:</b> говяжья котлета, бекон, томtаты, сыр пармезан, салат оклиф,лук, булочка на выбор. Соусы: фруктовый, гуакамоле </p>
+                        <p class="c-popup__description"><b>Вес:</b> от 365 до 410 гр.<br/>(в зависимости от веса булочки).</p>
+                        <p class="c-popup__description">Каждый может стать боссом! Хотя бы на время обеда. Вкуснейшая комбинация из говяжьей котлеты, швейцарского сыра, руколлы, бекона, томатов, красного лука, оливок просто не терпит никаких возражений. </p>
+
+                        <div class="c-popup__price">1200 &#8381;</div>
+                        <button type="button" class="close c-popup__btn-close" data-dismiss="modal">
+                            <span aria-hidden="true"></span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <button type="button" class="btn btn-default btn-lg c-popup__btn-buy">Заказать</button>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>

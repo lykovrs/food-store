@@ -5,6 +5,7 @@
 }
 .ctrl-checkbox[type="checkbox"] + label {
 	cursor: pointer;
+        font: 18px "open sans";
 
 	&:before {
 		content: "";

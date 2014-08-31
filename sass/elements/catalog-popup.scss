@@ -1,0 +1,164 @@
+@import "../base";
+
+.c-popup {
+        top: 270px;
+        z-index: 1041;
+        margin: 0;
+}
+
+.modal-backdrop {
+        background-color: #fff;
+}
+
+.c-popup__content {
+        width: 1140px;
+        margin: auto;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+
+}
+
+.c-popup__col {
+        padding: 0;
+        position: relative;
+        height: 570px;
+        padding-bottom: 55px;
+}
+
+.c-popup__img {
+        width: 100%;
+}
+
+.c-popup__header {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background: $green;
+        color: $white;
+        font: 300 26px/34px "open sans";
+        padding: 10px 15px;
+        width: 40%;
+}
+
+.c-popup__btn-close{
+        opacity: 1;
+        display: block;
+
+        &:hover {
+                opacity: 1;
+        }
+
+        span {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 44px;
+                height: 44px;
+                background: $white url("../images/site-icons.png")  0 -90px  no-repeat;
+                display: block;
+
+
+                &:hover {
+                        background-position: -46px -90px;
+                }
+        }
+}
+
+.c-popup__btn-buy {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+}
+
+.c-popup__e-type {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        top: 5px;
+        left: 15px;
+
+        img {
+                width: 100%;
+        }
+}
+
+.c-popup__e-name {
+        color: $black;
+        font: 28px/90px "open sans";
+        position: absolute;
+        top: 5px;
+        left: 110px;
+        max-width: 400px;
+        background: $brease;
+        padding: 0 25px;
+}
+
+.c-popup__contacts {
+        margin: 125px 15px 35px;
+}
+
+.c-popup__type-addr {
+        font: 300 16px "open sans";
+        color: $black;
+        display: block;
+}
+
+.c-popup__contacts-tel {
+        padding-left: 0;
+
+}
+
+.c-popup__addr {
+        margin-bottom: 17px;
+}
+
+.c-popup__addr-link {
+        text-decoration: none;
+        border-bottom: 1px dotted $black;
+        color: $black;
+        font: 22px "open sans";
+        position: relative;
+        margin-left: 25px;
+
+        &:hover {
+                color: $green;
+                border: none;
+                text-decoration: none;
+
+                &:before {
+                        background-position: -99px -112px;
+                }
+        }
+
+        &:before {
+                display: inline-block;
+                content: "";
+                width: 20px;
+                height: 23px;
+                background: url($site-icons-lnk) -99px -87px no-repeat;
+                text-decoration: none;
+                position: absolute;
+                top: 7px;
+                left: -25px;
+        }
+}
+
+.c-popup__text {
+        font: 400 22px "open sans";
+        color: $black;
+}
+
+.c-popup__description {
+        font: 300 16px "open sans";
+        color: $black;
+        margin: 0 15px 18px;
+}
+
+.c-popup__price {
+        position: absolute;
+        bottom: 10px;
+        right: 170px;
+        font: 300 24px "open sans";
+        color: $green;
+}

@@ -1,14 +1,14 @@
 @import "../base";
 
 .reviews {
-        padding: 52px 0 80px;
+        padding: 44px 0 80px;
         background: $white;
 
 }
 
 .reviews__header {
         text-align: center;
-        font: 40px "pfagorasanspro-thin";
+        font: 300 36px "open sans";
         color: $green;
         text-transform: uppercase;
         margin-bottom: 44px;
@@ -19,8 +19,8 @@
 }
 
 .reviews__item {
-        font: 14px/18px "pfagorasanspro-reg_0";
-        color: $black;
+        font: 300 13px/18px "open sans";
+        color: #000000;
 
         .pull-left {
                 margin-right: 27px;
@@ -29,6 +29,6 @@
         .media-heading {
                 margin: 17px 0 0;
                 color: $superLightBlack;
-                font: 19px "pfagorasanspro-medium";
+                font: 19px "open sans";
         }
 }

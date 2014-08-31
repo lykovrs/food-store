@@ -12,15 +12,15 @@
         float: left;
 }
 
-.login__signup,
-.login__trigger {
-//        width: 100px;
-}
-
 .login__separator {
-        font: 14px/70px "PFAgoraSansPro-Reg_0";
+        font: 14px/70px "open sans";
         width: 27px;
         text-align: center;
+}
+
+.login__signup,
+.login__enter {
+        cursor: pointer;
 }
 
 .login__trigger,
@@ -28,17 +28,17 @@
         display: inline-block;
         *display: inline;
         *zoom: 1;
-        font: 14px/70px "PFAgoraSansPro-Reg_0";
+        font: 14px/70px "open sans";
         color: $green;
         text-transform: uppercase;
         text-align: right;
-        word-spacing: 10px;
+        letter-spacing: 1px;
 }
 
 .login__trigger:hover,
 .login .active,
 .login__signup a:hover {
-        font-family: "PFAgoraSansPro-Reg_0";
+        font-family: "open sans";
         color: $lightBlack;
         text-decoration: none;
 }
@@ -48,9 +48,10 @@
         position: absolute;
         top: 59px;
         right: 0;
-        z-index: 999;
+        z-index: 1499;
         padding: 23px;
         background: $green;
+        font: 300 "open sans";
 
         &:before {
                 position: absolute;
@@ -73,7 +74,7 @@
 .actions__submit {
         background: $yellow;
         color: $white;
-        font: 20px "PFAgoraSansPro-Reg_0";
+        font: 18px "open sans";
         border: transparent;
         height: 40px;
 
@@ -90,7 +91,7 @@
 
 .inputs__form-inp {
         width: 285px;
-        font: 16px "PFAgoraSansPro-Reg_0";
+        font: 16px "open sans";
         height: 40px;
         margin-bottom: 19px;
         padding: 0 10px;
@@ -101,7 +102,7 @@
 
 
 .actions__pass {
-        font: 16px "pfagorasanspro-reg_0";
+        font: 14px "open sans";
         color: $white;
         text-decoration: underline;
         text-transform: none;

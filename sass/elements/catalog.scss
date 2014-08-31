@@ -1,0 +1,94 @@
+@import "../base";
+
+.catalog {
+        background: $creame;
+        padding: 300px 0 45px;
+
+        @include min-height(570px);
+
+        .content-box {
+                padding: 0 7px;
+        }
+
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9 {
+                padding: 8px;
+        }
+}
+
+.catalog__item {
+        background: $brease;
+        height: 274px;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+                .catalog__i-elem_t_name {
+                        background: $white;
+                        color: $black;
+                }
+
+                .catalog__i-elem_t_header {
+                        background: $green;
+                        color: $white;
+                }
+
+                .catalog__i-elem_t_price {
+                        background: $green;
+                        color: $white;
+                }
+
+                .catalog__i-elem_t_btn {
+                        opacity: 1 !important;
+                }
+        }
+}
+
+.catalog__i-elem {
+        position: absolute;
+        padding: 0 15px;
+}
+
+.catalog__i-elem_t_name {
+        text-transform: uppercase;
+        font: 15px/40px "open sans";
+        background: rgba($white, .5);
+        top: 5px;
+        left: 5px;
+        color: rgba($black, 0.5);
+}
+
+.catalog__i-elem_t_header {
+        font: 300 18px/35px "open sans";
+        background: rgba($green, .5);
+        top: 45px;
+        left: 5px;
+        color: rgba($white, .5);
+}
+
+.catalog__i-elem_t_price {
+        font: 300 24px/50px "open sans";
+        background: rgba($green, .5);
+        bottom: 5px;
+        left: 5px;
+        color: rgba($white, .5);
+        text-align: center;
+}
+
+.catalog__i-elem_t_btn {
+        display: block;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        opacity: .5;
+}
+
+.catalog__i-pic {
+        width: 100%;
+        height: 100%;
+}

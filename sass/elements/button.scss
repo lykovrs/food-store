@@ -6,8 +6,7 @@
 
 .btn-primary,
 .btn-default {
-	text-transform: uppercase;
-	font: 20px "PFAgoraSansPro-Medium";
+	font: 20px "open sans";
 	border: 2px solid $white;
 	position: relative;
 	background: transparent;
@@ -57,15 +56,18 @@
 
 .btn-primary_type_find {
 	width: 100%;
+        text-transform: uppercase;
+
+        @include min-width(142px);
 }
 
 
 .btn-default {
         text-transform: none;
-        font: 20px "PFAgoraSansPro-Reg_0";
-        border: 2px solid rgba($green, 0.5);
-        background: rgba($green, 0.5);
-        color: rgba($white, 0.5);
+        font: 20px "open sans";
+        border: 2px solid $green;
+
+        color: $white;
 
         &:hover {
                 border: 2px solid $green;
@@ -92,11 +94,6 @@
 
 }
 
-.btn-default_type_find {
-
-        @include min-width(142px);
-}
-
 .btn-lg {
-        padding: 11px 16px;
+        padding: 10px 26px;
 }
