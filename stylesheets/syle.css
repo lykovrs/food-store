@@ -8231,9 +8231,10 @@ html {
 body {
   font: 12px/18px  "open sans" sans-serif;
   height: 100%;
+  padding: 0 !important;
 }
 
-/* line 18, ../sass/syle.scss */
+/* line 19, ../sass/syle.scss */
 .wrapper {
   width: 100%;
   position: relative;
@@ -8245,22 +8246,22 @@ body {
   width: 1170px;
 }
 
-/* line 26, ../sass/syle.scss */
+/* line 27, ../sass/syle.scss */
 .content-box {
-  max-width: 1170px;
+  width: 1170px;
   margin: auto;
 }
 
 /* Header
 -----------------------------------------------------------------------------*/
-/* line 34, ../sass/syle.scss */
+/* line 35, ../sass/syle.scss */
 .header {
   background: white;
   border-bottom: 1px solid #dedede;
   padding: 15px 0 10px;
 }
 
-/* line 40, ../sass/syle.scss */
+/* line 41, ../sass/syle.scss */
 .header_t_fixed {
   position: fixed;
   left: 0;
@@ -8268,7 +8269,7 @@ body {
   z-index: 1500;
 }
 
-/* line 47, ../sass/syle.scss */
+/* line 48, ../sass/syle.scss */
 .header__inner {
   height: 90px;
   border-bottom: none;
@@ -8452,7 +8453,7 @@ body {
 
 /* Middle
 -----------------------------------------------------------------------------*/
-/* line 58, ../sass/syle.scss */
+/* line 59, ../sass/syle.scss */
 .content {
   padding: 0 0 144px;
 }
@@ -8880,13 +8881,13 @@ body {
   padding: 0 7px;
 }
 /* line 18, ../sass/elements/catalog.scss */
-.catalog .col-sm-3,
-.catalog .col-sm-4,
-.catalog .col-sm-5,
-.catalog .col-sm-6,
-.catalog .col-sm-7,
-.catalog .col-sm-8,
-.catalog .col-sm-9 {
+.catalog .col-xs-3,
+.catalog .col-xs-4,
+.catalog .col-xs-5,
+.catalog .col-xs-6,
+.catalog .col-xs-7,
+.catalog .col-xs-8,
+.catalog .col-xs-9 {
   padding: 8px;
 }
 
@@ -9143,7 +9144,7 @@ body {
 
 /* Footer
 -----------------------------------------------------------------------------*/
-/* line 73, ../sass/syle.scss */
+/* line 74, ../sass/syle.scss */
 .footer {
   min-width: 1170px;
   width: auto !important;
