@@ -3,8 +3,7 @@
 .catalog {
         background: $creame;
         padding: 300px 0 45px;
-
-        @include min-height(570px);
+        min-height: 570px;
 
         .content-box {
                 padding: 0 7px;

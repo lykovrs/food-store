@@ -1,7 +1,7 @@
 @import "../base";
 
 .c-popup {
-        top: 270px;
+        top: 302px;
         z-index: 1041;
         margin: 0;
 }
@@ -44,24 +44,17 @@
 .c-popup__btn-close{
         opacity: 1;
         display: block;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		width: 44px;
+		height: 44px;
+		background: $white url("../images/site-icons.png")  0 -90px  no-repeat !important;
+		display: block;
 
         &:hover {
                 opacity: 1;
-        }
-
-        span {
-                position: absolute;
-                top: 5px;
-                right: 5px;
-                width: 44px;
-                height: 44px;
-                background: $white url("../images/site-icons.png")  0 -90px  no-repeat;
-                display: block;
-
-
-                &:hover {
-                        background-position: -46px -90px;
-                }
+	            background-position: -46px -90px !important;
         }
 }
 
