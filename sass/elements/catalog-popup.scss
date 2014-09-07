@@ -4,10 +4,10 @@
         top: 302px;
         z-index: 1041;
         margin: 0;
-}
-
-.modal-backdrop {
-        background-color: #fff;
+        position: fixed;
+        display: none;
+        left: 50%;
+        margin-left: -570px;
 }
 
 .c-popup__content {
@@ -16,6 +16,7 @@
         box-shadow: none;
         border: none;
         border-radius: 0;
+        background: $white;
 
 }
 
@@ -23,7 +24,11 @@
         padding: 0;
         position: relative;
         height: 570px;
+        width: 568px;
+        display: inline-block;
+        vertical-align: top;
         padding-bottom: 55px;
+        background: $white;
 }
 
 .c-popup__img {
@@ -44,13 +49,14 @@
 .c-popup__btn-close{
         opacity: 1;
         display: block;
-		position: absolute;
-		top: 5px;
-		right: 5px;
-		width: 44px;
-		height: 44px;
-		background: $white url("../images/site-icons.png")  0 -90px  no-repeat !important;
-		display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 44px;
+        height: 44px;
+        background: $white url("../images/site-icons.png")  0 -90px  no-repeat !important;
+        display: block;
+        border: none;
 
         &:hover {
                 opacity: 1;

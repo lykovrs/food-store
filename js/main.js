@@ -57,5 +57,36 @@ $(document).ready(function(){
             source: substringMatcher(ingredients)
         });
 
+
+
+    $('.catalog__i-elem_t_btn').bind('click', function(e){
+        e.stopPropagation();
+    });
+
+
+    $(".catalog__item").click(function() {
+        var options = {
+            direction:"horizontal",
+            complete: function(){
+                $(".c-popup").show("drop", {direction: "up"});
+                $(".catalog__blind").show();
+            }
+        };
+
+        $(this).hide("clip", options);
+    });
+
+    $(".c-popup__btn-close").on("click", function(){
+        var options = {
+            direction: "up",
+            complete: function(){
+                $(".catalog__blind").hide();
+                $(".catalog__item").show("clip");
+            }
+        };
+
+        $(".c-popup").hide("drop", options);
+    });
 });
+
 

@@ -16,6 +16,7 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "twbs-bootstrap-sass": "~3.2.0+1",
-    "typehead.js": "~0.10.5"
+    "typehead.js": "~0.10.5",
+    "jqueryui": "~1.11.1"
   }
 }
